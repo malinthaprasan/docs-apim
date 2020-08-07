@@ -164,6 +164,9 @@ paths:
             List of qualifying APIs is returned.
           schema:
             $ref: '#/definitions/APIList'
+          examples:
+            application/json:
+              $ref: docs/examples/apis/apis_get.yaml#0/response/body
           headers:
             Content-Type:
               description: The content type of the body.
@@ -7488,6 +7491,8 @@ definitions:
         items:
           type: string
         example: []
+    example:
+      $ref: docs/examples/apis/apis_get.yaml#0/response/body
 
   #-----------------------------------------------------
   # The Audit Report resource
